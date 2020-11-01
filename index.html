@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
-<title>简介代码测试</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9,user-scalable=0" />
+    <title>验证结果</title>
+    <style type="text/css">
+        div {
+            line-height: 50px;
+            text-align: center;
+            font-size: 28px;
+        }
+    </style>
+    <script type="text/javascript">
+        function reloadImg() {
+            /*var el=document.getElementById("headerPhoto");
+            el.src=el.src+"?t="+new Date().getTime();*/
+        }
+    </script>
 </head>
 
-<body>
+<body style="margin:20px auto;width:90%" onload="reloadImg()">
+    <div>您的进入校园验证结果</div>
 
-<h1>我的测试网页</h1>
-
-<p align="center">Hello 大家好</p>
-
-<p style="text-decoration: line-through;">我是多余的，但是这个也是知识点，需要记下来哦 ^_^</p>
-
-<p align="center">我是麋鹿，这是我的个人网站。</p>
-
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
-
-<a href="https://www.zhihu.com/people/mi-lu-de-mi-lu-77-91" target="_blank">知乎</a>
-
-<p align="center">
-
-<img src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1006013113,2872893823&fm=26&gp=0.jpg" />
-
-</p>
-
+    <div style="color:#00AA00;">
+        <div><img id="headerPhoto" style="max-width:150px" src="boy.jpg" /></div>
+        <span>江宁</span>，<span>男</span>，<span>20</span>岁
+        <br/> 部门：
+        <span>文学院</span>
+        <br>
+        <div style="line-height: 2;color: black;">原因：申请外出后回来</div>
+        <span>您可以进校</span>
+        <br/><img src="right.jpg" style="width: 150px" />
+        <!--  <br/>当前时间：<span></span>-->
+    </div>
+    <div style="font-size: 20px">当前时间是：<span><script type="text/javascript">
+    var t=new Date();
+    var year=t.getFullYear();
+    var month=t.getMonth()+1;
+    var day=t.getDate();
+    var hour=t.getHours();
+    var minute=t.getMinutes();
+    if(minute<10){
+    var showtime=month + "月" + day+"日 "+hour+":0"+minute;}
+    else{var showtime=month + "月" + day+"日 "+hour+":"+minute;}
+    document.write(showtime);
+    </script></span></div>
 </body>
-
-</html>
-
